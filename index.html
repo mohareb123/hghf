@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>أسعار تهمك</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>أسعار تهمك</h1>
+
+  <div class="nav">
+    <button onclick="showSection('dollar')">💵 الدولار</button>
+    <button onclick="showSection('gold')">🪙 الذهب</button>
+    <button onclick="showSection('mobiles')">📱 الموبايلات</button>
+  </div>
+
+  <div id="dollar" class="section">
+    <h2>سعر الدولار</h2>
+    <button onclick="getDollarPrice()">تحديث السعر</button>
+    <div id="dollar-price">لم يتم التحميل بعد</div>
+  </div>
+
+  <div id="gold" class="section" style="display:none;">
+    <h2>سعر الذهب</h2>
+    <button onclick="getGoldPrice()">تحديث السعر</button>
+    <div id="gold-price">لم يتم التحميل بعد</div>
+  </div>
+
+  <div id="mobiles" class="section" style="display:none;">
+    <h2>أسعار الموبايلات</h2>
+    <p>سيتم إضافة البيانات لاحقًا أو يدويًا</p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
